@@ -1,0 +1,41 @@
+public class Main {
+    public static void main(String[] args){
+        System.out.printf("Bienvenido a Screen Match");
+        System.out.println("Pelicula: Matrix");
+
+        int fechaDeLanzamiento = 1999;
+        double media = (9.2 + 3.5 + 8 + 4.3)/4;
+
+        System.out.printf("Matrix es una paradoja. la mejor pelicula del fin del milenio. fue lanzada en: %d%n", fechaDeLanzamiento);
+
+        int calificacion = (int) (media / 2);
+        System.out.printf("el numero de estrellas son %d%n", calificacion);
+    }
+}
+
+//conversor de temperatura
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Bienvenido al conversor de temperatura");
+
+        double celsius = 35.4;
+        int fahrenheit = (int) ((celsius * 1.8) + 32);
+        System.out.printf("%s%n son %d%n Fahrenheit", celsius, fahrenheit);
+    }
+}
+//2da forma de hacerlo
+public class Main {
+
+    public static void main(String[] args) {
+        double temperaturaEnCelsius = 35.4;
+        double temperaturaEnFahrenheit = (temperaturaEnCelsius * 1.8) + 32;
+
+        String mensaje = String.format("La temperatura de %f Celsius es equivalente a %f Fahrenheit", temperaturaEnCelsius, temperaturaEnFahrenheit);
+
+        System.out.println(mensaje);
+
+        int temperaturaEnFahrenheitEntero = (int) temperaturaEnFahrenheit;
+        System.out.println("La temperatura en Fahrenheit entera es: " + temperaturaEnFahrenheitEntero);
+    }
+
+}
